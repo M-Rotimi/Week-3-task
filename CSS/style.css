@@ -1,0 +1,107 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+.container {
+    background: url("./Images/background.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    
+}
+
+.container-item {
+    background-image: url("./Images/background.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 1px 3px rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-size: cover;
+    /* margin-top: 1.75rem;
+    margin-bottom: 0.5rem; */
+    color: #fff;
+    margin: 1rem;
+}
+
+button {
+    border-radius: 5px;
+    padding: 0.8rem;
+    background-color: rgb(11, 40, 77);
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px;
+    box-shadow: 1.5px 1.5px 3px 1.5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#counter {
+    font-size: 2.5rem;
+    font-weight: 350;
+}
+
+#time {
+    color: green;
+    font-size: 10rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        font-weight: 300;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container-item {
+        padding: 0.2rem;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    button {
+    padding: 0.2rem;
+    margin-top: 14px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border: 1px;
+    }
+
+    #time {
+        font-size: 4rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.3rem;
+        font-weight: 200;
+    }
+
+    #counter {
+        font-size: 1rem;
+        font-weight: 180;
+    }
+}
