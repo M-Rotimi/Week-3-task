@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Counter</title>
+</head>
+<body class="container">
+
+            <div class="container-item">
+                <h1 id="counter">COUNTER</h1>
+                <div id="time">10</div>
+                <div id="LowerCount"><button onclick="LowerCount()" id="LowerCountbut">lower button</button></div>
+                <div id="AddCount"><button onclick="AddCount()" id="AddCountbut">add button</button></div>
+
+            </div>
+
+  <script>
+    console.log("AboutToCount");
+    var TimeLeft = 10;
+    function LowerCount(){
+    if(TimeLeft!=0){
+    TimeLeft-=1;
+    document.getElementById("time").innerHTML=TimeLeft;
+    }else if(TimeLeft==0){
+    
+    }
+    }
+
+    function AddCount(){
+    if(TimeLeft!=50){
+    TimeLeft+=1;
+    document.getElementById("time").innerHTML=TimeLeft;
+    }else if(TimeLeft==50){
+    
+    }
+    }
+    
+    </script>
+
+</body>
+</html>
